@@ -3,6 +3,7 @@ import { set_sidebar } from './utils/auto_sidebar.mjs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base:"/-PhysicsGravity_Blog/",
   head: [["link", { rel: "icon", href: "/images/logo.png" }]],
   title: "物研引力",
   description: "物研引力 - 技术教学博客网站",
