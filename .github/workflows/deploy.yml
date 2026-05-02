@@ -41,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3  # 升级 v3（修复报错）
         with:
-          path: docs/.vitepress/dist  # 这里修复了路径！你之前少了 docs/
+          path: .vitepress/dist  # 这里修复了路径！你之前少了 docs/
 
   deploy:
     environment:
