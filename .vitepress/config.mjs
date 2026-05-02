@@ -5,7 +5,7 @@ import { set_sidebar } from './utils/auto_sidebar.mjs'
 export default defineConfig({
   head: [["link", { rel: "icon", href: "/images/logo.png" }]],
   title: "物研引力",
-  description: "物研引力 - 物理应用协会教学网站",
+  description: "物研引力 - 技术教学博客网站",
   themeConfig: {
     logo: "/images/logo.png",
     outlineTitle: "目录",
