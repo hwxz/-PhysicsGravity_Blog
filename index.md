@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "物研引力"
-  text: "物理应用协会教学网站"
+  text: "技术教学博客"
   tagline: 探索物理奥秘，创造无限可能
   image:
     src: /background.svg
