@@ -7,7 +7,7 @@ hero:
   text: "物理应用协会教学网站"
   tagline: 探索物理奥秘，创造无限可能
   image:
-    src: /images/background.svg
+    src: /background.svg
     alt: "物研引力"
   actions:
     - theme: brand

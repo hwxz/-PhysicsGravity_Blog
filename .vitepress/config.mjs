@@ -4,11 +4,11 @@ import { set_sidebar } from './utils/auto_sidebar.mjs'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base:"/-PhysicsGravity_Blog/",
-  head: [["link", { rel: "icon", href: "/-PhysicsGravity_Blog/images/logo.png" }]],
+  head: [["link", { rel: "icon", href: "/logo.png" }]],
   title: "物研引力",
   description: "物研引力 - 技术教学博客网站",
   themeConfig: {
-    logo: "/-PhysicsGravity_Blog/images/logo.png",
+    logo: "/logo.png",
     outlineTitle: "目录",
     outline: [2, 6],
     // https://vitepress.dev/reference/default-theme-config
@@ -69,7 +69,7 @@ export default defineConfig({
     aside: "left",
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/hwxz?tab=repositories' }
+      { icon: 'github', link: 'https://github.com/hwxz' }
     ],
 
     footer: {
