@@ -49,46 +49,21 @@ features:
 - **即将推出** - 智能小车项目实战教程
 - **即将推出** - 3D打印实战案例
 
-## 热门教程推荐
+## 学习路径
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 2rem 0;">
-  <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
-    <h4 style="margin-top: 0;">ESP32S3 教程概览</h4>
-    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">了解ESP32S3开发教程的完整学习路径</p>
-    <p><span style="background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">概览</span></p>
-    <a href="/-PhysicsGravity_Blog/esp32s3/">开始学习 →</a>
-  </div>
-  <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
-    <h4 style="margin-top: 0;">LED 闪烁入门</h4>
-    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">从最简单的LED开始，学习GPIO操作</p>
-    <p><span style="background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">入门</span></p>
-    <a href="/-PhysicsGravity_Blog/esp32s3/beginner/led-blink">开始学习 →</a>
-  </div>
-  <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
-    <h4 style="margin-top: 0;">蓝牙 BLE 通信</h4>
-    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">学习蓝牙低功耗通信开发</p>
-    <p><span style="background: var(--vp-c-badge-blue); color: var(--vp-c-text); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">中级</span></p>
-    <a href="/-PhysicsGravity_Blog/esp32s3/intermediate/bluetooth-ble">开始学习 →</a>
-  </div>
-  <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
-    <h4 style="margin-top: 0;">SolidWorks 教程概览</h4>
-    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">了解SolidWorks建模教程的完整学习路径</p>
-    <p><span style="background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">概览</span></p>
-    <a href="/-PhysicsGravity_Blog/solidworks/">开始学习 →</a>
-  </div>
-  <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
-    <h4 style="margin-top: 0;">草图绘制基础</h4>
-    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">掌握SolidWorks草图绘制技能</p>
-    <p><span style="background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">入门</span></p>
-    <a href="/-PhysicsGravity_Blog/solidworks/beginner/sketching-basics">开始学习 →</a>
-  </div>
-  <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
-    <h4 style="margin-top: 0;">装配体设计</h4>
-    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">学习如何组装多个零件</p>
-    <p><span style="background: var(--vp-c-badge-blue); color: var(--vp-c-text); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">中级</span></p>
-    <a href="/-PhysicsGravity_Blog/solidworks/intermediate/assembly-design">开始学习 →</a>
-  </div>
-</div>
+### ESP32S3 开发
+| 难度 | 教程内容 | 学习目标 |
+|------|---------|---------|
+| 🔰 入门 | LED闪烁、按键输入、串口通信、GPIO操作 | 掌握基础硬件控制 |
+| ⚡ 中级 | 蓝牙BLE通信、传感器集成、数据记录 | 实现物联网基础功能 |
+| 🔧 高级 | 步进电机控制、IoT网络连接、电源管理 | 完成复杂智能项目 |
+
+### SolidWorks 建模
+| 难度 | 教程内容 | 学习目标 |
+|------|---------|---------|
+| 🔰 入门 | 界面介绍、草图绘制、特征创建、零件建模 | 掌握基础建模技能 |
+| ⚡ 中级 | 装配体设计、参数化建模、工程图、钣金设计 | 完成实际产品设计 |
+| 🔧 高级 | 曲面建模、仿真分析、设计自动化 | 掌握高级设计技巧 |
 
 ## 重要通知
 
