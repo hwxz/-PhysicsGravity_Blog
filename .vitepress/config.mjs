@@ -1,8 +1,10 @@
 import { defineConfig } from 'vitepress'
 import { set_sidebar } from './utils/auto_sidebar.mjs'
 
+const isProduction = process.env.NODE_ENV === 'production'
+
 export default defineConfig({
-  base: "/",
+  base: isProduction ? '/-PhysicsGravity_Blog/' : '/',
   head: [["link", { rel: "icon", href: "/logo.png" }]],
   title: "物研引力",
   description: "物研引力 - 技术教学博客网站",
