@@ -10,7 +10,6 @@ export default defineConfig({
     logo: "/logo.png",
     outlineTitle: "目录",
     outline: [2, 6],
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
       { text: '入门指南', link: '/getting-started/' },
@@ -35,7 +34,6 @@ export default defineConfig({
       { text: '进阶项目', link: '/advanced-projects/' },
       { text: '资源下载', link: '/resources/' }
     ],
-
     sidebar: {
       '/getting-started/': set_sidebar('getting-started'),
       '/esp32s3/': set_sidebar('esp32s3'),
@@ -50,16 +48,12 @@ export default defineConfig({
       '/resources/': set_sidebar('resources')
     },
     aside: "left",
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/hwxz' }
     ],
-
     footer: {
       copyright: "Copyright © 2026 物研引力. All Rights Reserved.",
     },
-
-    // 设置搜索框的样式
     search: {
       provider: "local",
       options: {

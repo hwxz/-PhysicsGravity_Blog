@@ -15,17 +15,17 @@ hero:
       link: /getting-started/
     - theme: alt
       text: 浏览教程
-      link: /microcontroller/
+      link: /esp32s3/
 
 features:
-  - title: 单片机开发
+  - title: ESP32S3 开发
     icon: 💻
-    details: 从Arduino入门到STM32进阶，掌握嵌入式开发技能，打造智能硬件项目
-    link: /microcontroller/
-  - title: 3D建模打印
+    details: 从入门到高级，掌握 ESP32S3 开发，打造智能硬件项目
+    link: /esp32s3/
+  - title: SolidWorks 建模
     icon: 🎨
-    details: 学习Blender等建模软件，掌握3D打印技术，将创意变为现实
-    link: /3d-modeling/
+    details: 学习 SolidWorks 3D CAD，掌握工程设计技术，将创意变为现实
+    link: /solidworks/
   - title: 项目实战
     icon: 🚀
     details: 通过完整项目案例，将所学知识融会贯通，提升综合能力
@@ -44,6 +44,7 @@ features:
 
 ## 最新更新
 
+- **2026.05.03** - 网站全面升级，新增 ESP32S3 和 SolidWorks 完整教程
 - **2026.05.02** - 网站正式上线，发布首批教程内容
 - **即将推出** - 智能小车项目实战教程
 - **即将推出** - 3D打印实战案例
@@ -52,22 +53,40 @@ features:
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 2rem 0;">
   <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
-    <h4 style="margin-top: 0;">Arduino 基础入门</h4>
-    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">从LED闪烁开始，学习单片机开发</p>
-    <p><span style="background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">入门</span></p>
-    <a href="/microcontroller/arduino-basics">开始学习 →</a>
+    <h4 style="margin-top: 0;">ESP32S3 教程概览</h4>
+    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">了解ESP32S3开发教程的完整学习路径</p>
+    <p><span style="background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">概览</span></p>
+    <a href="/esp32s3/">开始学习 →</a>
   </div>
   <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
-    <h4 style="margin-top: 0;">Blender 基础入门</h4>
-    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">学习3D建模，开启创意设计之旅</p>
+    <h4 style="margin-top: 0;">LED 闪烁入门</h4>
+    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">从最简单的LED开始，学习GPIO操作</p>
     <p><span style="background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">入门</span></p>
-    <a href="/3d-modeling/blender-basics">开始学习 →</a>
+    <a href="/esp32s3/beginner/led-blink">开始学习 →</a>
   </div>
   <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
-    <h4 style="margin-top: 0;">开发环境搭建</h4>
-    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">准备好你的学习环境，开启学习之旅</p>
+    <h4 style="margin-top: 0;">蓝牙 BLE 通信</h4>
+    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">学习蓝牙低功耗通信开发</p>
+    <p><span style="background: var(--vp-c-badge-blue); color: var(--vp-c-text); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">中级</span></p>
+    <a href="/esp32s3/intermediate/bluetooth-ble">开始学习 →</a>
+  </div>
+  <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
+    <h4 style="margin-top: 0;">SolidWorks 教程概览</h4>
+    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">了解SolidWorks建模教程的完整学习路径</p>
+    <p><span style="background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">概览</span></p>
+    <a href="/solidworks/">开始学习 →</a>
+  </div>
+  <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
+    <h4 style="margin-top: 0;">草图绘制基础</h4>
+    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">掌握SolidWorks草图绘制技能</p>
     <p><span style="background: var(--vp-c-brand-soft); color: var(--vp-c-brand-1); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">入门</span></p>
-    <a href="/getting-started/environment-setup">开始学习 →</a>
+    <a href="/solidworks/beginner/sketching-basics">开始学习 →</a>
+  </div>
+  <div style="border: 1px solid var(--vp-c-divider); border-radius: 8px; padding: 1.5rem; background: var(--vp-c-bg-soft);">
+    <h4 style="margin-top: 0;">装配体设计</h4>
+    <p style="color: var(--vp-c-text-2); font-size: 0.9rem; margin-bottom: 1rem;">学习如何组装多个零件</p>
+    <p><span style="background: var(--vp-c-badge-blue); color: var(--vp-c-text); padding: 0.2rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">中级</span></p>
+    <a href="/solidworks/intermediate/assembly-design">开始学习 →</a>
   </div>
 </div>
 
@@ -80,4 +99,3 @@ features:
 ---
 
 **加入我们，一起探索物理与科技的魅力！**
-

@@ -1,11 +1,8 @@
 import path from "node:path";
 import fs from "node:fs";
 
-// 文件根目录
 const DIR_PATH = path.resolve();
-// 白名单,过滤不是文章的文件和文件夹
 const WHITE_LIST = [
-    "index.md",
     ".vitepress",
     "node_modules",
     ".idea",
@@ -13,12 +10,40 @@ const WHITE_LIST = [
     "images",
 ];
 
-// 判断是否是文件夹
+const DIR_NAME_MAP = {
+    'getting-started': '入门指南',
+    'advanced-projects': '进阶项目',
+    'resources': '资源下载',
+    'esp32s3': 'ESP32S3 开发',
+    'esp32s3/beginner': '初级教程',
+    'esp32s3/intermediate': '中级教程',
+    'esp32s3/advanced': '高级教程',
+    'solidworks': 'SolidWorks',
+    'solidworks/beginner': '初级教程',
+    'solidworks/intermediate': '中级教程',
+    'solidworks/advanced': '高级教程',
+    'beginner': '初级教程',
+    'intermediate': '中级教程',
+    'advanced': '高级教程'
+};
+
 const isDirectory = (path) => fs.lstatSync(path).isDirectory();
 
-// 取差值
 const intersections = (arr1, arr2) =>
     Array.from(new Set(arr1.filter((item) => !new Set(arr2).has(item))));
+
+const getMarkdownTitle = (filePath) => {
+    try {
+        const content = fs.readFileSync(filePath, 'utf-8');
+        const match = content.match(/^#\s+(.+)/m);
+        if (match) {
+            return match[1].trim();
+        }
+    } catch (e) {
+        console.warn(`无法读取文件标题: ${filePath}`);
+    }
+    return null;
+};
 
 // 把方法导出直接使用
 function getList(params, path1, pathname) {
@@ -39,15 +64,15 @@ function getList(params, path1, pathname) {
                 items: getList(files, dir, `${pathname}/${params[file]}`),
             });
         } else {
-            // 获取名字
             const name = path.basename(params[file]);
-            // 排除非 md 文件
             const suffix = path.extname(params[file]);
             if (suffix !== ".md") {
                 continue;
             }
+            const filePath = path.join(path1, params[file]);
+            const title = getMarkdownTitle(filePath);
             res.push({
-                text: name,
+                text: title || name,
                 link: `${pathname}/${name}`,
             });
         }
@@ -60,12 +85,13 @@ function getList(params, path1, pathname) {
 }
 
 export const set_sidebar = (pathname) => {
-    // 获取pathname的路径
     const dirPath = path.join(DIR_PATH, pathname);
-    // 读取pathname下的所有文件或者文件夹
     const files = fs.readdirSync(dirPath);
-    // 过滤掉
     const items = intersections(files, WHITE_LIST);
-    // getList 函数后面会讲到
-    return getList(items, dirPath, pathname);
+    const listItems = getList(items, dirPath, pathname);
+    const label = DIR_NAME_MAP[pathname] || pathname;
+    return [{
+        text: label,
+        items: listItems
+    }];
 };

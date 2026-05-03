@@ -23,8 +23,8 @@
 
 ### 第二步：学习基础教程
 从我们的入门教程开始：
-- [Arduino入门基础](../microcontroller/arduino-basics.md)
-- [3D建模入门](../3d-modeling/blender-basics.md)
+- [ESP32S3 LED闪烁入门](../esp32s3/beginner/led-blink.md)
+- [SolidWorks界面介绍](../solidworks/beginner/interface-intro.md)
 
 ### 第三步：实践项目
 完成第一个小项目后，您就可以开始更高级的学习了！
